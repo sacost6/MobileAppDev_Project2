@@ -1,5 +1,6 @@
 package com.example.project2;
 
+import android.media.Image;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
@@ -28,12 +29,13 @@ public class MainActivity extends AppCompatActivity {
             arrayList.add(imagemodel);
         }
 
-        ImageAdapter adpter= new ImageAdapter(getApplicationContext(), arrayList);
+        final ImageAdapter adpter= new ImageAdapter(getApplicationContext(), arrayList);
         gridView.setAdapter(adpter);
         //item click listner
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View view, int position, long id) {
+                System.out.println("position clicked is" + position);
             }
         });
     }
