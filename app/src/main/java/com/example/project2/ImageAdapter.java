@@ -34,6 +34,7 @@ public class ImageAdapter extends BaseAdapter {
         }
         ImageView imageView;
         imageView = (ImageView) convertView.findViewById(R.id.image);
+        imageView.setMaxHeight(200);
         imageView.setImageResource(arrayList.get(position).getmThumbIds());
         return convertView;
     }
