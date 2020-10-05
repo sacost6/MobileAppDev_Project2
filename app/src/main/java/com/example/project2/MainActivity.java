@@ -10,7 +10,8 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     int image[] = {R.drawable.nissanskyline, R.drawable.hellcat, R.drawable.foxbodymustang,
             R.drawable.c4corvette, R.drawable.rollsroyceseries2, R.drawable.mclaren600lt,
-            R.drawable.hvipergt, R.drawable.chargergt, R.drawable.fourrunner};
+            R.drawable.hvipergt, R.drawable.chargergt, R.drawable.fourrunner,
+            R.drawable.audiquattro, R.drawable.mclarenf1, R.drawable.citroends};
 
     GridView gridView;
     ArrayList<ImageModel> arrayList;
